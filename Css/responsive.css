@@ -1,0 +1,54 @@
+@media screen and (max-width: 1200px) {
+    /* latest blog section */
+    .blog-section .grid-container-4 {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 980px) {
+    /* latest blog section */
+    .blog-section .grid-container-4 {
+        grid-template-columns: auto;
+    }
+
+    /* footer section */
+    .footer-main .grid-container-footer {
+        grid-template-columns: 100%;
+    }
+
+    .about-freshshop,
+    .information {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 480px) {
+    /* global styles */
+    h1 {
+        font-size: 5rem;
+    }
+    /* header section starts here */
+    .hamburger-icon ul li p {
+        display: none;
+    }
+
+    .hamburger-logo img {
+        width: 14rem;
+    }
+
+    .toggle-btn i {
+        font-size: 2rem;
+    }
+
+    .search-option ul li:nth-child(2) {
+        margin-left: 1rem;
+        width: 86%;
+    }
+
+    .header-carousel {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}

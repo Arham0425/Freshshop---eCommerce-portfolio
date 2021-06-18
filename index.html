@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshshop - eCommerce Template</title>
+    <!-- Fontawesome file -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!-- Google fonts file -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Main css file -->
+    <link rel="stylesheet" href="Css/style.css">
+    <!-- Responsive css file -->
+    <link rel="stylesheet" href="Css/responsive.css">
+</head>
+<body>
+    
+    <!-- 
+        =======================
+        header starts here
+        =======================
+     -->
+
+     <header>
+        <section class="header-section">
+           <!-- navbar -->
+           <div class="navbar padding-x clear-fix">
+              <!-- navbar logo -->
+              <div class="logo">
+                 <a href="#home">
+                    <img src="images/logo.png" alt="logo">
+                 </a>
+              </div>
+              <!-- nav icon -->
+              <div class="nav-icon">
+                 <ul>
+                    <li class="search" id="search">
+                       <i class="fa fa-search" aria-hidden="true"></i>
+                    </li>
+                    <li class="cart-notification">
+                       <i class="fas fa-shopping-cart"></i>
+                       <p>my cart <sup id="notification">3</sup></p>
+                    </li>
+                 </ul>
+              </div>
+              <!-- nav menu -->
+              <nav>
+                 <div class="nav-menu">
+                    <ul>
+                       <li><a class="active" href="#">home</a></li>
+                       <li><a href="#about">about us</a></li>
+                       <!-- dropdown menu -->
+                       <li class="dropdown-container"><a href="#shop">shop</a>
+                          <ul class="dropdown-content">
+                             <li><a href="#">sidebar shop</a></li>
+                             <li><a href="#">shop detail</a></li>
+                             <li><a href="#">cart</a></li>
+                             <li><a href="#">checkout</a></li>
+                             <li><a href="#">my account</a></li>
+                             <li><a href="#">wishlist</a></li>
+                          </ul>
+                       </li>
+                       <li><a href="#gallery">gallery</a></li>
+                       <li><a href="#contact">contact us</a></li>
+                    </ul>
+                 </div>
+              </nav>
+           </div>
+           <!-- hamburger menu -->
+           <div class="hamburger-menu padding-x">
+              <!-- hamburger navbar -->
+              <div class="hamburger-navbar">
+                 <!-- toggle button -->
+                 <button class="toggle-btn">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                 </button>
+                 <!-- logo -->
+                 <div class="hamburger-logo">
+                    <a href="#home">
+                       <img src="images/logo.png" alt="logo">
+                    </a>
+                 </div>
+                 <!-- nav icon -->
+                 <div class="hamburger-icon">
+                    <ul>
+                       <li class="search" id="hamburger-search">
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                       </li>
+                       <li class="hamburger-cart-notification">
+                          <i class="fas fa-shopping-cart"></i>
+                          <p>my cart <sup id="notification">3</sup></p>
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+              <!-- hamburger nav menu -->
+              <div class="menu">
+                 <ul>
+                    <li><a class="active" href="#">home</a></li>
+                    <hr>
+                    <li><a href="#about">about us</a></li>
+                    <hr>
+                    <!-- dropdown menu -->
+                    <li class="hamburger-dropdown-container"><a href="#shop">shop</a>
+                       <ul class="hamburger-dropdown-content">
+                          <li><a href="#">sidebar shop</a></li>
+                          <hr>
+                          <li><a href="#">shop detail</a></li>
+                          <hr>
+                          <li><a href="#">cart</a></li>
+                          <hr>
+                          <li><a href="#">checkout</a></li>
+                          <hr>
+                          <li><a href="#">my account</a></li>
+                          <hr>
+                          <li><a href="#">wishlist</a></li>
+                       </ul>
+                    </li>
+                    <hr>
+                    <li><a href="#gallery">gallery</a></li>
+                    <hr>
+                    <li><a href="#contact">contact us</a></li>
+                    <hr>
+                 </ul>
+              </div>
+           </div>
+           <!-- search option -->
+           <div class="search-option padding-x clear-fix">
+              <ul>
+                 <li><i class="fa fa-search fa-2x" aria-hidden="true"></i></li>
+                 <li><input type="text" placeholder="Search"></li>
+                 <li id="remove"><i class="fa fa-times fa-2x" aria-hidden="true"></i></li>
+              </ul>
+           </div>
+           <!-- cart -->
+           <div class="cart">
+              <div class="cart-remove"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
+              <div class="cart-body">
+                 <div class="cart-header">
+                    <!-- item-1 -->
+                    <div class="cart-item clear-fix">
+                       <img src="images/img-pro-01.jpg" alt="img-pro">
+                       <div class="cart-title">
+                          <h4>Delica omtantur</h4>
+                          <p>1x - $80.00</p>
+                       </div>
+                    </div>
+                    <hr>
+                    <!-- item-2 -->
+                    <div class="cart-item clear-fix">
+                       <img src="images/img-pro-02.jpg" alt="img-pro">
+                       <div class="cart-title">
+                          <h4>Delica omtantur</h4>
+                          <p>1x - $80.00</p>
+                       </div>
+                    </div>
+                    <hr>
+                    <!-- item-3 -->
+                    <div class="cart-item clear-fix">
+                       <img src="images/img-pro-03.jpg" alt="img-pro">
+                       <div class="cart-title">
+                          <h4>Delica omtantur</h4>
+                          <p>1x - $80.00</p>
+                       </div>
+                    </div>
+                    <hr>
+                 </div>
+                 <div class="cart-footer">
+                    <button class="btn">view cart</button>
+                    <div>
+                       <strong>Total: </strong>
+                       <p>$180.00</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <!-- header carousel -->
+           <div class="header-carousel" id="header-carousel">
+              <div class="header-carousel-title">
+                 <h1>welcome to freshshop</h1>
+                 <p>See how your users experience your website in realtime or view trends to see any changes in
+                    performance over time.</p>
+              </div>
+              <div class="header-carousel-button">
+                 <button class="btn" id="header-left"><i class="fas fa-chevron-left fa-2x"></i></button>
+                 <button class="btn shop-new">shop new</button>
+                 <button class="btn" id="header-right"><i class="fas fa-chevron-right fa-2x"></i></button>
+              </div>
+              <div class="header-carousel-indicator">
+                 <div class="header-indicator active" data-id="background-1"></div>
+                 <div class="header-indicator" data-id="background-2"></div>
+                 <div class="header-indicator" data-id="background-3"></div>
+              </div>
+           </div>
+        </section>
+     </header>
+
+     <!-- 
+        =======================
+        header ends here
+        =======================
+     -->
+
+     <!-- 
+        =======================
+        main starts here
+        =======================
+     -->
+
+     <main>
+        <!-- categories card section starts here -->
+        <section class="card-section">
+           <div class="categories-card grid-container-3 padding-x padding-y">
+              <div class="categories">
+                 <img src="images/categories_img_01.jpg" alt="categories_img_01">
+                 <button class="btn">Lorem ipsum dolor</button>
+              </div>
+              <div class="categories">
+                 <img src="images/categories_img_02.jpg" alt="categories_img_02">
+                 <button class="btn">Lorem ipsum dolor</button>
+              </div>
+              <div class="categories">
+                 <img src="images/categories_img_03.jpg" alt="categories_img_03">
+                 <button class="btn">Lorem ipsum dolor</button>
+              </div>
+           </div>
+           <!-- offer card -->
+           <div class="offer-card padding-x padding-y grid-container-2">
+              <img src="images/add-img-01.jpg" alt="add-img-01">
+              <img src="images/add-img-02.jpg" alt="add-img-02">
+           </div>
+        </section>
+        <!-- categories card section starts here -->
+        
+        <!-- fruits & vegetables section starts here -->
+        <section class="fruits-section padding-x padding-y">
+           <div class="fruits-title">
+              <h2>fruits & vegetables</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, maxime!</p>
+           </div>
+           <div class="fruits-btn"></div>
+           <div class="fruits-card grid-container-4"></div>
+        </section>
+        <!-- fruits & vegetables section ends here -->
+
+        <!-- latest blog section starts here -->
+        <section class="blog-section padding-x padding-y">
+           <div class="blog-title">
+              <h2>latest blog</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, doloremque!</p>
+           </div>
+           <!-- blog card -->
+           <div class="blog-card grid-container-4">
+              <!-- blog - 1 -->
+              <div class="blog">
+                 <img src="images/blog-img.jpg" alt="blog-img-01" style="width: 100%;">
+                 <div class="blog-desc">
+                    <h4>Fusce in augue non nisi fringilla</h4>
+                    <p>Nulla ut urna egestas, porta libero id, suscipit orci. Quisque in lectus sit amet urna dignissim
+                       feugiat. Mauris molestie egestas pharetra. Ut finibus cursus nunc sed mollis. Praesent laoreet
+                       lacinia elit id lobortis.</p>
+                 </div>
+                 <ul>
+                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                    <li><a href="#"><i class="far fa-comments"></i></a></li>
+                 </ul>
+              </div>
+              <!-- blog - 2 -->
+              <div class="blog">
+                 <img src="images/blog-img-01.jpg" alt="blog-img-02" style="width: 100%;">
+                 <div class="blog-desc">
+                    <h4>Fusce in augue non nisi fringilla</h4>
+                    <p>Nulla ut urna egestas, porta libero id, suscipit orci. Quisque in lectus sit amet urna dignissim
+                       feugiat. Mauris molestie egestas pharetra. Ut finibus cursus nunc sed mollis. Praesent laoreet
+                       lacinia elit id lobortis.</p>
+                 </div>
+                 <ul>
+                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                    <li><a href="#"><i class="far fa-comments"></i></a></li>
+                 </ul>
+              </div>
+              <!-- blog - 3 -->
+              <div class="blog">
+                 <img src="images/blog-img-02.jpg" alt="blog-img-03" style="width: 100%;">
+                 <div class="blog-desc">
+                    <h4>Fusce in augue non nisi fringilla</h4>
+                    <p>Nulla ut urna egestas, porta libero id, suscipit orci. Quisque in lectus sit amet urna dignissim
+                       feugiat. Mauris molestie egestas pharetra. Ut finibus cursus nunc sed mollis. Praesent laoreet
+                       lacinia elit id lobortis.</p>
+                 </div>
+                 <ul>
+                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fas fa-eye"></i></a></li>
+                    <li><a href="#"><i class="far fa-comments"></i></a></li>
+                 </ul>
+              </div>
+           </div>
+        </section>
+        <!-- latest blog section ends here -->
+
+        <!-- fruits carousel section starts here -->
+        <section class="fruits-carousel">
+           <div class="instagram-images">
+              <div class="owl-slider">
+                 <div class="instagram-img">
+                    <img src="images/instagram-img-01.jpg" alt="instagram-img">
+                    <div class="instagram-box">
+                       <i class="fab fa-instagram"></i>
+                    </div>
+                 </div>
+                 <div class="instagram-img">
+                    <img src="images/instagram-img-02.jpg" alt="instagram-img">
+                    <div class="instagram-box">
+                       <i class="fab fa-instagram"></i>
+                    </div>
+                 </div>
+                 <div class="instagram-img">
+                    <img src="images/instagram-img-03.jpg" alt="instagram-img">
+                    <div class="instagram-box">
+                       <i class="fab fa-instagram"></i>
+                    </div>
+                 </div>
+                 <div class="instagram-img">
+                    <img src="images/instagram-img-04.jpg" alt="instagram-img">
+                    <div class="instagram-box">
+                       <i class="fab fa-instagram"></i>
+                    </div>
+                 </div>
+                 <div class="instagram-img">
+                    <img src="images/instagram-img-05.jpg" alt="instagram-img">
+                    <div class="instagram-box">
+                       <i class="fab fa-instagram"></i>
+                    </div>
+                 </div>
+              </div>
+              <div class="fruits-carousel-btns">
+                 <button class="fruits-carousel-left"><i class="fas fa-arrow-left"></i></button>
+                 <button class="fruits-carousel-right"><i class="fas fa-arrow-right"></i></button>
+              </div>
+           </div>
+        </section>
+        <!-- fruits carousel section starts here -->
+     </main>
+
+     <!-- 
+        =======================
+        main ends here
+        =======================
+     -->
+
+     <!-- 
+        =======================
+        footer starts here
+        =======================
+     -->
+
+     <footer>
+        <section class="footer-section">
+           <div class="footer-main padding-y padding-x">
+              <div class="footer-main-first grid-container-footer">
+                 <div class="business-time">
+                    <h5 class="first-underline">business time</h5>
+                    <span>Monday - Friday: 08.00am to 05.00pm</span>
+                    <span>Saturday: 10.00am to 08.00pm</span>
+                    <span>Sunday: Closed</span>
+                 </div>
+                 <div class="news-letter">
+                    <h5 class="first-underline">newsletter</h5>
+                    <div class="input-area">
+                       <input type="email" placeholder="Email Address*">
+                       <i class="fas fa-envelope"></i>
+                    </div>
+                    <button class="btn">submit</button>
+                 </div>
+                 <div class="social-media">
+                    <h5 class="first-underline">social media</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <ul>
+                       <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                       <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                       <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                       <li><a href="#"><i class="fas fa-wifi"></i></a></li>
+                       <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                       <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                 </div>
+              </div>
+              <hr>
+              <div class="footer-main-second grid-container-footer">
+                 <div class="about-freshshop">
+                    <h5 class="first-underline">about freshshop</h5>
+                    <p id="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                       nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                       labore et dolore magna aliqua.</p>
+                 </div>
+                 <div class="information">
+                    <h5 class="first-underline">information</h5>
+                    <ul>
+                       <li><a href="#">about us</a></li>
+                       <li><a href="#">customer service</a></li>
+                       <li><a href="#">our sitemap</a></li>
+                       <li><a href="#">terms & conditions</a></li>
+                       <li><a href="#">privacy policy</a></li>
+                       <li><a href="#">delivery information</a></li>
+                    </ul>
+                 </div>
+                 <div class="contact-us">
+                    <h5 class="first-underline">contact us</h5>
+                    <ul>
+                       <li>
+                          <i class="fas fa-map-marker-alt"></i>
+                          <span>
+                             Address: Michael I. Days 3756 <br>
+                             Preston Street Wichita, <br>
+                             KS 67213
+                          </span>
+                       </li>
+                       <li>
+                          <i class="fas fa-phone-square"></i>
+                          <span>Phone: <a href="#">+1-888 705 770</a></span>
+                       </li>
+                       <li>
+                          <i class="fas fa-envelope"></i>
+                          <span>Email: <a href="#">info@domain.com</a></span>
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+           <div class="footer-reserved">
+              <p>
+                 All Rights Reserved. © 2045 Your Shop Design By: 
+                 <a href="#">HTML Design</a>
+              </p>
+           </div>
+        </section>
+     </footer>
+
+     <!-- 
+        =======================
+        footer ends here
+        =======================
+     -->
+
+
+    <!-- Js file -->
+    <script src="Js/app.js"></script>
+</body>
+</html>
