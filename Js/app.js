@@ -261,7 +261,7 @@ function displayAllItem(menuItems) {
             const id = Number(e.target.dataset.id);
             const filteredCartItem = menuItems.reduce((value, item) => {
                 if (item.id === id) {
-                    value.push(item, ...value)
+                    value.push(item)
                 }
                 return value;
             }, [])
