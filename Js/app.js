@@ -256,6 +256,11 @@ function displayAllItem(menuItems) {
     // ADD TO CART
     // ==============
     const addCartBtn = fruitsCards.querySelectorAll('.add-cart');
+    const cartHeader = document.querySelector('.cart-header');
+    const cartTotalPrice = document.getElementById('cart-total-price');
+    const notification = document.querySelectorAll('#notification');
+    let values = [];
+    let sum = 0;
     addCartBtn.forEach((btn) => {
         btn.addEventListener('click', (e) => {
             const id = Number(e.target.dataset.id);
@@ -264,13 +269,77 @@ function displayAllItem(menuItems) {
                     value.push(item)
                 }
                 return value;
-            }, [])
-            console.log(filteredCartItem)
+            }, values)
+            // console.log(filteredCartItem)
+            // cartItemShow(filteredCartItem);
+            function cartItemShow(filteredCartItem, sum) {
+                const mapingCartItem = filteredCartItem.map((item) => {
+                    const {
+                        id,
+                        img,
+                        desc,
+                        price
+                    } = item;
+                    return `<div><div class="cart-item clear-fix">
+                          <img src=${img} alt="img-pro" />
+                          <div class="cart-title">
+                            <h4>${desc}</h4>
+                            <p>1x - ${price}</p>
+                          </div>
+                          <i id="remove-cart" data-id=${id} class="fa fa-times fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <hr /></div>`
+                }).join('')
+                // console.log(mapingCartItem);
+                cartHeader.innerHTML = mapingCartItem;
+                notification.forEach((noti) => {
+                    noti.innerHTML = filteredCartItem.length;
+                })
+
+                const slicedItem = values.map((item) => {
+                    return Number(item.price.slice(1, 5))
+                })
+                // console.log(slicedItem);
+                
+                slicedItem.forEach((item) => {
+                    sum += item
+                })
+                cartTotalPrice.innerHTML = `$${sum.toFixed(2)}`;
+            }
+            cartItemShow(filteredCartItem, sum);
+
+            // remove cart 
+            const removeCart = document.querySelectorAll('#remove-cart');
+            removeCart.forEach((btn) => {
+                btn.addEventListener('click', (e) => {
+                    const id = Number(e.target.dataset.id)
+                    values = values.filter((item) => {
+                        if (!(item.id === id)) {
+                            return item
+                        }
+                    })
+                    console.log(e.target.parentElement.parentElement)
+                    e.target.parentElement.parentElement.remove();
+                    let newSum = 0;
+                    const slicedItem = values.map((item) => {
+                        return Number(item.price.slice(1, 5))
+                    })
+                    // console.log(slicedItem);
+
+                    slicedItem.forEach((item) => {
+                        newSum += item
+                    })
+                    cartTotalPrice.innerHTML = `$${newSum.toFixed(2)}`;
+                    notification.forEach((noti) => {
+                        noti.innerHTML = values.length;
+                    })
+                })
+            })
         })
     })
 }
 
-// filter items
+// filter menu items
 function filterItem(menuItems) {
     const titles = menuItems.reduce((values, item) => {
         if (!values.includes(item.title)) {
@@ -313,8 +382,8 @@ function filterItem(menuItems) {
 // =================
 // ADD CART
 // =================
-const notification = document.getElementById('notification');
-const cartHeader = document.querySelector('.cart-header');
+
+
 
 
 
